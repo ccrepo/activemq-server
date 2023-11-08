@@ -6,7 +6,7 @@ import java.io.InputStream;
 import javax.servlet.ServletContext;
 
 /**
- * This class implements logging.
+ * This class implements Servlet resource management.
  * 
  * @author cc
  * @version %I%, %G%

@@ -3,7 +3,7 @@ package cc.tools.activemq.server;
 import java.util.Date;
 
 /**
- * This class implements logging.
+ * This class implements time and date functions.
  * 
  * @author cc
  * @version %I%, %G%

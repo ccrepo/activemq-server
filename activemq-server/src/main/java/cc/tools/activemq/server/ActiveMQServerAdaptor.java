@@ -13,7 +13,7 @@ import javax.jms.TextMessage;
 import javax.naming.Context;
 
 /**
- * This class implements a wrapperr for the MQ dynamic connectivity class..
+ * This class implements a wrapper for the Active MQ connection objects.
  * 
  * @author cc
  * @version %I%, %G%

@@ -3,7 +3,7 @@ package cc.tools.activemq.server;
 import javax.servlet.ServletContext;
 
 /**
- * This class implements logging.
+ * This class implements a configuration class.
  * 
  * @author cc
  * @version %I%, %G%

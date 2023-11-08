@@ -11,7 +11,7 @@ import javax.crypto.Cipher;
 import javax.servlet.ServletContext;
 
 /**
- * This class implements logging.
+ * This class implements security key use, text encryption and encoding functions.
  * 
  * @author cc
  * @version %I%, %G%

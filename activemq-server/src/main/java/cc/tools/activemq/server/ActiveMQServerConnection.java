@@ -7,7 +7,7 @@ import javax.naming.Context;
 import javax.naming.InitialContext;
 
 /**
- * This class implements an MQ writer interface for writing to Active MQ bus.
+ * This class implements an Active MQ connection.
  * 
  * @author cc
  * @version %I%, %G%

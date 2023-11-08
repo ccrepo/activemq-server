@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>ActivemqServer</display-name>
+  <description>Activemq Server</description>  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <context-param>
+    <param-name>credentials</param-name>
+    <param-value>/WEB-INF/security/credentials</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>server-private-key</param-name>
+    <param-value>/WEB-INF/key/server-private.key</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>connect-limit</param-name>
+    <param-value>5</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>connect-interval</param-name>
+    <param-value>100</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>publish-limit</param-name>
+    <param-value>5</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>publish-interval</param-name>
+    <param-value>500</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>initial-context</param-name>
+    <param-value>java:comp/env</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>factory-name</param-name>
+    <param-value>jms/ConnectionFactory</param-value>
+  </context-param>
+  
+  <servlet>
+    <servlet-name>activemq</servlet-name>
+    <servlet-class>cc.tools.activemq.server.ActiveMQServer</servlet-class>
+    <load-on-startup>5</load-on-startup>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>activemq</servlet-name>
+    <url-pattern>/server/logger/*</url-pattern>
+  </servlet-mapping>
+</web-app>

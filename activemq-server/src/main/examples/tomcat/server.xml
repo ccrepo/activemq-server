@@ -1,0 +1,13 @@
+
+<!--  EXAMPLE CONTEXT FOR server.xml -->
+
+<Context antiJARLocking="true" docBase="activemq" path="/activemq" reloadable="true" >
+
+    <Resource auth="Container" brokerName="LocalActiveMQBroker" brokerURL="tcp://localhost:61616" description="JMS Connection Factory" factory="org.apache.activemq.jndi.JNDIReferenceFactory"
+                   name="jms/ConnectionFactory" type="org.apache.activemq.ActiveMQConnectionFactory" useEmbeddedBroker="false" />
+
+    <Resource auth="Container" factory="org.apache.activemq.jndi.JNDIReferenceFactory" name="jms/topic/CCTopic" physicalName="CC.MQ" type="org.apache.activemq.command.ActiveMQTopic" />
+
+    <Resource auth="Container" factory="org.apache.activemq.jndi.JNDIReferenceFactory" name="jms/queue/CCQueue" physicalName="CC.MQ.QUEUE" type="org.apache.activemq.command.ActiveMQQueue" />
+
+</Context>
